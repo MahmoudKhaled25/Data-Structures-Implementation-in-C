@@ -22,7 +22,7 @@ typedef struct Queue
     s32int rear;
     u32int numElements;
     u64int queueSize;
-}queue_t;
+} queue_t;
 
 /**
  * @brief Creates a new queue with the specified size.

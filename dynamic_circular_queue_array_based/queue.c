@@ -12,8 +12,10 @@ typedef enum queueStatus
     NOT_FULL
 }queueStatus_t;
 
+/*************************** Helper Functions ***************************/
 static queueStatus_t isEmpty (const queue_t *queue);
 static queueStatus_t isFull (const queue_t *queue);
+
 
 static queueStatus_t isEmpty (const queue_t *queue)
 {
@@ -24,6 +26,7 @@ static queueStatus_t isFull (const queue_t *queue)
 {
     return (queue->queueSize == queue->numElements) ? FULL : NOT_FULL;
 }
+/**************************************************************************/
 
 queue_t *createQueue(u64int queueSize)
 {
@@ -35,6 +38,7 @@ queue_t *createQueue(u64int queueSize)
         queue->data = (u32int *) calloc(queueSize, sizeof(u32int));
         if (NULL != queue->data)
         {
+            // queue members' initial values
             queue->front = -1;
             queue->rear = -1;
             queue->numElements = 0;

@@ -16,7 +16,8 @@ The repository contains the following data structures:
 - Singly Linked List: A linear data structure where each element (node) contains a value and a reference to the next node.
 - Doubly Linked List: Similar to a singly linked list, but each node has references to both the next and previous nodes.
 - Circular Singly Linked List: A variation of a singly linked list, where the last node points back to the first node, forming a circular structure.
-- Dynamic Queue (Array-based): A queue data structure implemented using an array, allowing for dynamic resizing as elements are enqueued and dequeued.
+- Circular Doubly Linked List: A variation of a doubly linked list, where the first node points back to the last node and the last node points forward to the first node, forming a circular structure.
+- Dynamic Circular Queue (Array-based): A queue data structure implemented using an array, allowing for dynamic resizing as elements are enqueued and dequeued.
 - Dynamic Stack (Array-based): A stack data structure implemented using an array, with dynamic resizing capability to accommodate push and pop operations.
 - Static Stack (Array-based): A stack data structure implemented using a fixed-size array, suitable for scenarios where the maximum number of elements is known in advance.
 

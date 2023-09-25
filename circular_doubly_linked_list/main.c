@@ -2,10 +2,10 @@
  * @file main.c
  * @author Mahmoud Khaled
  * @date 2023-09-24
- *  
+ * 
  */
-#include <stdio.h>
-#include "circular_singly_linked_list.h"
+
+#include "circular_doubly_linked_list.h"
 
 void showRetState (retState_t myState);
 
@@ -18,12 +18,12 @@ int main()
     printList(tail);
 
     // Create a list with 1 node
-    retVal = createList (&tail, 1, 1);
+    retVal = createList (&tail, 2, 1, 2);
     showRetState (retVal);
     printList (tail);
 
     // Adding 2nd node at the end
-    retVal = addAtEnd(&tail, 2);
+    retVal = addAtEnd(&tail, 3);
     showRetState (retVal);
     printList(tail);
 
@@ -43,7 +43,7 @@ int main()
     printList(tail);
 
     // Adding 6th node at the pos 6
-    retVal = insert(&tail, 6, 11);
+    retVal = insert(&tail, 7, 11);
     showRetState (retVal);
     printList(tail);
 
@@ -56,6 +56,12 @@ int main()
     retVal = reverseList(&tail);
     showRetState (retVal);
     printList(tail);
+
+    // Sorting the list
+    retVal = sortList(tail);
+    showRetState (retVal);
+    printList(tail);
+
 
     // Deleting first node from the list
     retVal = delFirstNode(&tail);

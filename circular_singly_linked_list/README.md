@@ -2,22 +2,32 @@
 
 This repository contains an implementation of a Circular Singly Linked List in C. The Circular Singly Linked List is a data structure that consists of a sequence of nodes, where each node contains a data element and a link to the next node in the sequence. In a circular singly linked list, the last node's link points back to the first node, forming a circular structure.
 
-### Contents
+## Table of Contents
+
+- [Circular Singly Linked List Implementation](#circular-singly-linked-list-implementation)
+  - [Table of Contents](#table-of-contents)
+  - [Contents](#contents)
+  - [Usage](#usage)
+  - [Functionality](#functionality)
+    - [Example](#example)
+  - [Contributions](#contributions)
+
+## Contents
 
 - circular_singly_linked_list.h: Header file containing the declarations of functions and structures related to the Circular Singly Linked List.
 - circular_singly_linked_list.c: Source file containing the implementations of the Circular Singly Linked List functions.
 - platform_types.h: Header file defining platform-specific types used in the Circular Singly Linked List implementation.
 - main.c: Example usage of the Circular Singly Linked List functions.
 
-### Usage
+## Usage
 
 To use the Circular Singly Linked List in your C project, follow these steps:
 
-1. Copy the `circular_singly_linked_list.h` and `circular_singly_linked_list.c` files into your project directory.
-2. Include the `circular_singly_linked_list.h` header file in your source file(s) where you want to use the Circular Singly Linked List.
-3. Compile and link the `circular_singly_linked_list.c` file along with your other source files.
+1. Copy the `circular_singly_linked_list.h` and `circular_singly_linked_list.c` files into your project directory.
+2. Include the `circular_singly_linked_list.h` header file in your source file(s) where you want to use the Circular Singly Linked List.
+3. Compile and link the `circular_singly_linked_list.c` file along with your other source files.
 
-### Functionality
+## Functionality
 
 The Circular Singly Linked List implementation provides the following functions:
 
@@ -34,6 +44,8 @@ The Circular Singly Linked List implementation provides the following functions:
 - `countNodes`: Count the number of nodes in the Circular Singly Linked List.
 
 ### Example
+
+Here's an example of how to use the Circular Singly Linked List:
 
 ```c
 #include <stdio.h>
@@ -88,6 +100,6 @@ int main() {
 
 ```
 
-### Contributions
+## Contributions
 
 Contributions to this Circular Singly Linked List implementation are welcome. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.

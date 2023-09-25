@@ -12,8 +12,7 @@
 #include "stack.h"
 #define CALC_STACK_SIZE(STACK_PTR) ((STACK_PTR) + 1)
 
-
-
+/***************************** Helper Functions *****************************/
 static unsigned int stackFull (const stack_t *);
 static unsigned int stackEmpty (const stack_t *);
 
@@ -26,6 +25,7 @@ static unsigned int stackEmpty (const stack_t *stack)
 {
     return (STACK_EMPTY == stack->stack_pointer);
 }
+/****************************************************************************/
 
 returnState_t pushBack (stack_t *stack, u32int data)
 {

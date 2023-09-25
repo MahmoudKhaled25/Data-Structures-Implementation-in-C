@@ -2,6 +2,14 @@
 
 This repository provides an implementation of a single linked list in the C programming language. It offers a collection of functions to manipulate and operate on a linked list data structure.
 
+## Table of Content
+
+- [Single Linked List Implementation](#single-linked-list-implementation)
+  - [Table of Content](#table-of-content)
+  - [Usage](#usage)
+  - [Functions](#functions)
+  - [Contributions](#contributions)
+
 ## Usage
 
 To use the single linked list implementation in your C projects, follow these steps:

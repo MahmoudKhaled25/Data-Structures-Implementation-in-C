@@ -17,32 +17,32 @@ int main()
 
     printList(tail);
 
-    // Create a list with 1 node
+    // Create a list with 2 nodes
     retVal = createList (&tail, 2, 1, 2);
     showRetState (retVal);
     printList (tail);
 
-    // Adding 2nd node at the end
+    // Adding 3rd node at the end
     retVal = addAtEnd(&tail, 3);
     showRetState (retVal);
     printList(tail);
 
-    // Adding 3rd node at the beginning
+    // Adding 4th node at the beginning
     retVal = addAtBeg(&tail, 0);
     showRetState (retVal);
     printList(tail);
 
-    // Adding 4th node at the pos 2
+    // Adding 5th node at the pos 2
     retVal = insert(&tail, 2, 77);
     showRetState (retVal);
     printList(tail);
 
-    // Adding 5th node at the pos 1
+    // Adding 6th node at the pos 1
     retVal = insert(&tail, 1, 99);
     showRetState (retVal);
     printList(tail);
 
-    // Adding 6th node at the pos 6
+    // Adding 7th node at the pos 7
     retVal = insert(&tail, 7, 11);
     showRetState (retVal);
     printList(tail);
